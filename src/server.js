@@ -17,6 +17,6 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsDoc(swaggerOption
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })  
     .then(() => {  
-        app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));  
+        app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));  
     })  
     .catch(err => console.error(err));
